@@ -1,8 +1,13 @@
 import React from 'react'
+import NewsLetter from '../Components/NewsLetter'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>Home
+
+
+      <NewsLetter/>
+    </div>
   )
 }
 
