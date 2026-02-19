@@ -3,7 +3,6 @@ import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home";
 import Deals from "../Pages/Deals";
 import NewArrivals from "../Pages/NewArrivals";
-
 import Faq from "../Pages/Faq";
 import Privacy from "../Pages/Privacy";
 import Terms from "../Pages/Terms";
@@ -28,7 +27,8 @@ export const routes = createBrowserRouter([
             },
             {
                 path:"new-arrivals",
-                element:<NewArrivals />
+                element:<NewArrivals />,
+                loader:() => fetch("https://fakestoreapi.com/products")
             },
             {
                 path:"products",
